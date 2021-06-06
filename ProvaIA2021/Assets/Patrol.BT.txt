@@ -1,0 +1,10 @@
+tree("Root")
+	sequence
+    	PickDestination(-100,-100)        //Escolhe um destino novo
+    	MoveToDestination                 //Vai até esse destino
+    	PickDestination(-100, 100)        //Escolhe um destino novo
+    	MoveToDestination                 //Vai até esse destino
+    	PickDestination( 100, 100)        //Escolhe um destino novo
+    	MoveToDestination                 //Vai até esse destino
+    	PickDestination( 100,-100)        //Escolhe um destino novo
+    	MoveToDestination                 //Vai até esse destino

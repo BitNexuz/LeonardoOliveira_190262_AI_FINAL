@@ -1,0 +1,17 @@
+tree("Root")
+			fallback
+					tree("Empurrar")                   //inicia Empurrar
+					while IsHealthLessThan(40.0)       //caso a vida seja menor que 40
+						fallback                       //volta
+							tree("Wander")             //inicia wander
+tree("Empurrar")                                     
+			while SeePlayer                             //se enxergar o player
+					sequence
+						TargetPlayer                   //torna o Player alvo
+						LookAtTarget                    //mira no Player
+						EmpurrarPraFora                 //inicia a função de empurrar o player pra fora
+
+tree("Wander")
+			sequence
+    				PickRandomDestination               //seleciona um destino aleatorio
+    				MoveToDestination                   //vai até esse destino

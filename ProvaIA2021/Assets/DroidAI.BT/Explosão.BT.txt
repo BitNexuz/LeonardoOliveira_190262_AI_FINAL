@@ -1,0 +1,18 @@
+tree("Root")
+			fallback
+					tree("Morre")                      //inicia morre
+					while IsHealthLessThan(40.0)       //caso a vida seja menor que 40
+						fallback                       //volta
+							tree("Wander")             //inicia wander
+tree("Morre")                                     
+			while SeePlayer                             //se enxergar o player
+					sequence
+						TargetPlayer                    //torna o Player alvo
+						LookAtTarget                    //mira no Player
+						Morre                           //se destrói
+						
+
+tree("Wander")
+			sequence
+    				PickRandomDestination               //seleciona um destino aleatorio
+    				MoveToDestination                   //vai até esse destino

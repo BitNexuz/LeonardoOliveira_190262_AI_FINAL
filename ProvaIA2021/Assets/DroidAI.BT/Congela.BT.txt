@@ -1,0 +1,17 @@
+tree("Root")
+			fallback
+					tree("Congela")                    //inicia congela
+					while IsHealthLessThan(40.0)       //caso a vida seja menor que 40
+						fallback                       //volta
+							tree("Wander")             //inicia wander
+tree("Congela")
+			while SeePlayer
+					sequence
+						TargetPlayer                    //inicia o metodo que torna o player target
+						Congela                         //inicia ongela
+						
+
+tree("Wander")
+			sequence
+    				PickRandomDestination               //seleciona um destino aleatorio
+    				MoveToDestination                   //vai até esse destino

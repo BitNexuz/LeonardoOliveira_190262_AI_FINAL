@@ -1,0 +1,11 @@
+tree("Root")
+        	sequence
+                random(5,1,1,1)                           //quantidade aleatoria de vezes para o parametro
+                                Turn(90.0)                //Graus de rotação
+                                Turn(-90.0)               //Graus de rotação
+                                Turn(145.0)               //Graus de rotação
+                                Turn(-27.0)               //Graus de rotação
+                LookAtTarget                              //Encontra o target
+                WaitRandom(2.0,5.0)                       
+               
+                      
